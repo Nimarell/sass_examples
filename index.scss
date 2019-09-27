@@ -1,0 +1,67 @@
+/* on peut importer un fichier */
+@import 'partial';
+
+// commentaire non reporté dans le fichier css
+/* commentaire reporté dans le fichier css */
+
+/* declaration d'une variable */
+$main-color: #e24646;
+$secondary-color: #466ae2;
+$secondary-color-hover: #1b47d8;
+/* utilisation d'une variable */
+div {
+	color: $main-color;
+}
+/* nesting */
+div {
+	color: $main-color;
+	li {
+		color: $secondary-color;
+	}
+}
+
+/* utilisation de la référence : */
+div {
+	color: $main-color;
+	li {
+		color: $secondary-color;
+		&:hover {
+			color: $secondary-color-hover;
+		}
+	}
+}
+
+/* declaration placeholder */
+/* declaration fin  placeholder */
+
+%test-placeholder {
+	color: red;
+	font-size: 12px;
+}
+
+/* utilisation placeholder */
+
+.implement-placeholder {
+	@extend %test-placeholder;
+}
+
+/* utilisation placeholder + override d'une propriété */
+
+.implement-placeholder-and-override {
+	@extend %test-placeholder;
+	font-size: 16px;
+}
+
+/* declaration mixin */
+
+@mixin flex-jusitfy-align($justifyContent, $alignItems) {
+	display: flex;
+	justify-content: $justifyContent;
+	align-items: $alignItems;
+}
+
+/* utilisation mixin */
+
+.full-flex-center {
+	@include flex-jusitfy-align(center, center);
+}
