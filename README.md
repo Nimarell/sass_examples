@@ -7,3 +7,5 @@ In order to see what is going on, you'll need to compile those files into css fi
 Koala app is an easy way of doing it.
 
 See http://koala-app.com/
+
+See https://gist.github.com/jareware/4738651 for other examples 
