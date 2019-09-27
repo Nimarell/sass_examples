@@ -9,3 +9,5 @@ Koala app is an easy way of doing it.
 See http://koala-app.com/
 
 See https://gist.github.com/jareware/4738651 for other examples 
+
+See https://www.sitepoint.com/8-tips-help-get-best-sass/ for tips 
